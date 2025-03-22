@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flores Amarillas</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+  <link href="css/style1.css" rel="stylesheet">
+</head>
+<body>
+    <audio autoplay loop>
+        <source src="audio/Flor.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="game-container">
+      <div class="dialogue-container" onclick="showModal()">
+        <div class="dialogue-box">
+          <p>Feliz inicio de temporada Sunshine, espero te la pases bien, ten, un regalo de mi parte</p>
+        </div>
+        <div class="dialogue-character">
+            <img src="img/pan.png" alt="Pan" />
+            <span>Pan</span>
+          </div>
+      </div>
+    </div>
+  
+    <div class="modal-overlay" id="modalOverlay" onclick="closeModal()">
+        <div class="modal" onclick="event.stopPropagation();">
+          <p>¡Haz recibido un girasol!</p>
+          <img src="img/girasol.png" alt="Girasol" />
+        </div>
+    </div>
+  
+    <script>
+        function showModal() {
+          document.getElementById('modalOverlay').style.display = 'block';
+        }
+        function closeModal() {
+          document.getElementById('modalOverlay').style.display = 'none';
+        }
+    </script>
+  </body>
+</html>
