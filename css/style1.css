@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  background: url('../img/fondo1.png') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.dialogue-container {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 680px;
+  background-color: #e0c090;
+  border: 8px solid #8b5e3c;
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 1000px;
+  margin-left: 400px;
+}
+
+.dialogue-character {
+  background-color: #d6a76d;
+  border: 4px solid #8b5e3c;
+  border-radius: 12px;
+  padding: 10px;
+  text-align: center;
+}
+
+.dialogue-character img {
+  width: 120px;
+  height: 120px;
+}
+
+.dialogue-character span {
+  display: block;
+  font-size: 24px;
+  color: #5a3e2b;
+  margin-top: 8px;
+}
+
+.dialogue-box {
+  background-color: #e0c090;
+  border-left: 4px solid #8b5e3c;
+  padding-left: 20px;
+  flex: 1;
+}
+
+.dialogue-box p {
+  color: #5a3e2b;
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #e0c090;
+    border: 8px solid #8b5e3c;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    width: 400px;
+}
+
+.modal img {
+    width: 80px;
+    height: 120px;
+}
